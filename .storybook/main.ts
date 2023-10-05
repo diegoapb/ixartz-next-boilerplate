@@ -6,6 +6,7 @@ const config: StorybookConfig = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    './addons/manager.tsx'
   ],
   framework: {
     name: '@storybook/nextjs',
@@ -17,6 +18,7 @@ const config: StorybookConfig = {
   core: {
     disableTelemetry: true,
   },
+  staticDirs: ['../public'],
 };
 
 export default config;

@@ -1,5 +1,5 @@
 import '../src/styles/global.css';
-import { StorybookWrapper } from './StorybookWrapper';
+import { ProviderWrapper } from './StorybookWrapper';
 
 // import "react-quill/dist/quill.snow.css";
 // import "slick-carousel/slick/slick.css";
@@ -45,7 +45,7 @@ export const globalTypes = {
     defaultValue: 'light',
     toolbar: {
       icon: 'mirror',
-      items: [ 'light','dark'],
+      items: ['light', 'dark'],
       showName: true,
     },
   },
@@ -61,7 +61,7 @@ const preview: Preview = {
       },
     },
   },
-  decorators: [StorybookWrapper],
+  decorators: [ProviderWrapper],
 };
 
 export default preview;
